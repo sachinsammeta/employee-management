@@ -1,0 +1,8 @@
+CREATE TABLE employee
+(
+    employee_id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    employee_name VARCHAR(100) NOT NULL,
+    department VARCHAR(100),
+    salary NUMERIC(12,2),
+    created_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
